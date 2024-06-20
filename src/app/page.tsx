@@ -68,8 +68,8 @@ export default function Home() {
         <h2 className="text-4xl font-bold mb-8 mt-16 text-center" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>Our Past Work</h2>
         <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col items-center p-4 bg-gray-100 shadow-lg">
-            <Image src="/project1.png" alt="Project 1" width={300} height={200} />
-            <h3 className="text-2xl font-bold mt-4" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>Project 1</h3>
+            <Image src="/multiplay.png" alt="Project 1" width={300} height={200} />
+            <h3 className="text-2xl font-bold mt-4" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>Multiplay</h3>
           </div>
           <div className="flex flex-col items-center p-4 bg-gray-100 shadow-lg">
             <Image src="/project2.png" alt="Project 2" width={300} height={200} />

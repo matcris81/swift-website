@@ -5,7 +5,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 @layer utilities {
@@ -13,3 +13,4 @@ body {
     text-wrap: balance;
   }
 }
+

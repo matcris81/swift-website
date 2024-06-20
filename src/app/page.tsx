@@ -83,7 +83,7 @@ export default function Home() {
       <section id="contact" className="w-full flex flex-col items-center py-24 bg-gray-100 mt-32">
         <h2 className="text-4xl font-bold mb-8 mt-16 text-center" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>Contact Us</h2>
         <p className="max-w-2xl text-center mb-8" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>
-        Let's discuss how we can achieve your software goals together
+        Lets discuss how we can achieve your software goals together
         </p>
         <a href="mailto:your-email@example.com" className="text-xl font-bold" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>
           Matei@swift.ac.nz

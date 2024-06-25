@@ -120,7 +120,7 @@ export default function Home() {
       <div className="py-5"></div> {/* Add padding div for spacing */}
         <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#00A89D', fontFamily: 'Poppins, sans-serif' }}>Contact Us</h2>
         <p className="max-w-2xl text-center mb-8" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>
-          Let's discuss your software goals. If you have any questions or would like to get in touch, please contact us at:
+          Let&apos;s discuss your software goals. If you have any questions or would like to get in touch, please contact us at:
         </p>
         <motion.a
           href="mailto:info@swift.ac.nz"

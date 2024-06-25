@@ -24,7 +24,7 @@ export default function Home() {
           className="mb-0"
         >
           <Image
-            src="/test3.svg"
+            src="/logo.svg"
             alt="Logo"
             width={400}
             height={400}

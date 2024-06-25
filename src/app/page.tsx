@@ -99,7 +99,7 @@ export default function Home() {
         <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="box flex flex-col items-center p-6 bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg rounded-xl transition-shadow duration-300 hover:shadow-2xl transform hover:scale-105">
             <div className="w-full h-48 overflow-hidden rounded-t-xl">
-              <Image src="/multiplay.png" alt="Project 1" width={600} height={400} className="w-full h-full object-cover"/>
+              <Image src="/multiplay-home.png" alt="Project 1" width={600} height={400} className="w-full h-full object-cover"/>
             </div>
             <h3 className="text-2xl font-bold mt-4 text-center" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>Multiplay</h3>
             <p className="text-center text-base sm:text-lg mt-2" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>A platform to manage multiplayer games and events seamlessly.</p>

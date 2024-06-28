@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-white flex flex-col items-center justify-start">
+    <div className="relative min-h-screen bg-black flex flex-col items-center justify-start">
       <Head>
         <title>Swift - We Build Your Software</title>
         <meta name="description" content="We build your software" />
@@ -16,19 +16,19 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
-      <section className="relative flex flex-col items-center justify-center text-center h-screen bg-hero-pattern">
+      <section className="relative flex flex-col items-center justify-center text-center min-h-screen bg-hero-pattern px-4">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-0"
+          className="mb-16" // Adjusted from mb-4 to mb-8
         >
           <Image
-            src="/logo.svg"
+            src="/Swift3.svg"
             alt="Logo"
             width={400}
             height={400}
-            style={{ width: '400px', height: '300px' }}
+            className="hero-logo"
           />
         </motion.div>
         <motion.div
@@ -41,7 +41,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2"
+            className="text-3xl sm:text-4xl md:text-5xl mb-2"
             style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}
           >
             WE BUILD YOUR SOFTWARE
@@ -50,7 +50,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2 }}
-            className="text-lg sm:text-xl mb-4"
+            className="text-base sm:text-lg md:text-xl mb-4 max-w-lg mx-auto"
             style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}
           >
             We help companies transform ideas into cutting-edge software solutions. Your vision, our expertise.
@@ -61,7 +61,7 @@ export default function Home() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.4 }}
-          className="inline-block px-6 py-3 mt-4 text-lg font-bold text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105"
+          className="inline-block px-6 py-3 mt-4 text-base sm:text-lg font-bold text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105"
           style={{
             backgroundColor: '#00A89D', // Changed to match the logo color
             backdropFilter: 'blur(10px)',
@@ -73,8 +73,8 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full flex flex-col items-center py-24 bg-gray-100 mt-24 pt-32"> {/* Added pt-32 for more padding */}
-      <div className="py-5"></div> {/* Add padding div for spacing */}
+      <section id="services" className="w-full flex flex-col items-center py-24 bg-gray-900 mt-24 pt-32"> {/* Added pt-32 for more padding */}
+        <div className="py-5"></div> {/* Add padding div for spacing */}
         <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#00A89D', fontFamily: 'Poppins, sans-serif' }}>Our Services</h2>
         <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
           <div className="box flex flex-col items-center p-8 bg-gradient-to-r from-blue-700 to-blue-900 shadow-md hover:shadow-lg rounded-lg transition-shadow duration-300">
@@ -93,10 +93,10 @@ export default function Home() {
       </section>
 
       {/* Past Projects Section */}
-      <section id="past-projects" className="w-full flex flex-col items-center py-24 bg-white mt-24 pt-32"> {/* Added pt-32 for more padding */}
-      <div className="py-5"></div> {/* Add padding div for spacing */}
+      <section id="past-projects" className="w-full flex flex-col items-center py-24 bg-black mt-24 pt-32"> {/* Added pt-32 for more padding */}
+        <div className="py-5"></div> {/* Add padding div for spacing */}
         <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#00A89D', fontFamily: 'Poppins, sans-serif' }}>Our Past Work</h2>
-        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
           <div className="box flex flex-col items-center p-6 bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg rounded-xl transition-shadow duration-300 hover:shadow-2xl transform hover:scale-105">
             <div className="w-full h-48 overflow-hidden rounded-t-xl">
               <Image src="/multiplay-home.png" alt="Project 1" width={600} height={400} className="w-full h-full object-cover"/>
@@ -116,10 +116,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="w-full flex flex-col items-center py-24 bg-gray-100 mt-24 pt-32"> {/* Added pt-32 for more padding */}
-      <div className="py-5"></div> {/* Add padding div for spacing */}
+      <section id="contact" className="w-full flex flex-col items-center py-24 bg-gray-900 mt-24 pt-32"> {/* Added pt-32 for more padding */}
+        <div className="py-5"></div> {/* Add padding div for spacing */}
         <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#00A89D', fontFamily: 'Poppins, sans-serif' }}>Contact Us</h2>
-        <p className="max-w-2xl text-center mb-8" style={{ color: '#002F6C', fontFamily: 'Poppins, sans-serif' }}>
+        <p className="max-w-2xl text-center mb-8" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>
           Let&apos;s discuss your software goals. If you have any questions or would like to get in touch, please contact us at:
         </p>
         <motion.a
@@ -154,11 +154,31 @@ export default function Home() {
           transition: transform 0.3s, box-shadow 0.3s;
           border-radius: 16px;
           padding: 1.5rem;
+          width: calc(100% - 2rem); /* Ensure there's padding from the edges */
+          max-width: 500px; /* Maximum width for the boxes */
         }
 
         .box:hover {
           transform: translateY(-5px);
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-logo {
+          width: 100%; /* Ensure it scales with screen size */
+          max-width: 800px; /* Maximum width */
+          height: auto; /* Maintain aspect ratio */
+        }
+
+        @media (min-width: 640px) {
+          .hero-logo {
+            max-width: 400px; /* Adjust for larger screens */
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .hero-logo {
+            max-width: 800px; /* Original width for larger screens */
+          }
         }
 
         SVG{
@@ -167,7 +187,7 @@ export default function Home() {
           line-height:1em;
           /* just for vertical alignment as svg don't have descenders like fonts */
           vertical-align:-0.2em;
-          }
+        }
 
         .box img {
           border-top-left-radius: 16px;
@@ -188,7 +208,7 @@ export default function Home() {
         }
 
         .bg-hero-pattern {
-          background: linear-gradient(135deg, #6a1b9a, #00A89D); /* Changed to match the logo color */
+          background: linear-gradient(135deg, #000000, #000000); /* Changed to black */
           color: #FFFFFF;
           width: 100%;
           display: flex;
@@ -205,7 +225,7 @@ export default function Home() {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(106, 27, 154, 0.7), rgba(0, 168, 157, 0.7)); /* Changed to match the logo color */
+          background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Changed to black */
           z-index: -1;
         }
       `}</style>

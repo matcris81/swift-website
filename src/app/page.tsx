@@ -21,7 +21,7 @@ export default function Home() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-16" // Adjusted from mb-4 to mb-8
+          className="mb-16"
         >
           <Image
             src="/Swift3.svg"
@@ -63,7 +63,7 @@ export default function Home() {
           transition={{ duration: 1.4 }}
           className="inline-block px-6 py-3 mt-4 text-base sm:text-lg font-bold text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105"
           style={{
-            backgroundColor: '#00A89D', // Changed to match the logo color
+            backgroundColor: '#00A89D',
             backdropFilter: 'blur(10px)',
             border: '1px solid rgba(255, 255, 255, 0.5)'
           }}
@@ -73,8 +73,8 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="w-full flex flex-col items-center py-24 bg-gray-900 mt-24 pt-32"> {/* Added pt-32 for more padding */}
-        <div className="py-5"></div> {/* Add padding div for spacing */}
+      <section id="services" className="w-full flex flex-col items-center py-24 bg-gray-900 mt-24 pt-32">
+        <div className="py-5"></div>
         <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#00A89D', fontFamily: 'Poppins, sans-serif' }}>Our Services</h2>
         <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
           <div className="box flex flex-col items-center p-8 bg-gradient-to-r from-blue-700 to-blue-900 shadow-md hover:shadow-lg rounded-lg transition-shadow duration-300">
@@ -93,10 +93,10 @@ export default function Home() {
       </section>
 
       {/* Past Projects Section */}
-      <section id="past-projects" className="w-full flex flex-col items-center py-24 bg-black mt-24 pt-32"> {/* Added pt-32 for more padding */}
-        <div className="py-5"></div> {/* Add padding div for spacing */}
+      <section id="past-projects" className="w-full flex flex-col items-center justify-center py-24 bg-black mt-24 pt-32"> {/* Centering this section */}
+        <div className="py-5"></div>
         <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#00A89D', fontFamily: 'Poppins, sans-serif' }}>Our Past Work</h2>
-        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+        <div className="max-w-6xl flex justify-center items-center">
           <div className="box flex flex-col items-center p-6 bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg rounded-xl transition-shadow duration-300 hover:shadow-2xl transform hover:scale-105">
             <div className="w-full h-48 overflow-hidden rounded-t-xl">
               <Image src="/multiplay-home.png" alt="Project 1" width={600} height={400} className="w-full h-full object-cover"/>
@@ -104,20 +104,12 @@ export default function Home() {
             <h3 className="text-2xl font-bold mt-4 text-center" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>Multiplay</h3>
             <p className="text-center text-base sm:text-lg mt-2" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>A platform to manage multiplayer games and events seamlessly.</p>
           </div>
-          <div className="box flex flex-col items-center p-6 bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg rounded-xl transition-shadow duration-300 hover:shadow-2xl transform hover:scale-105">
-            <div className="w-full h-48 overflow-hidden rounded-t-xl">
-              <Image src="/project2.png" alt="Project 2" width={600} height={400} className="w-full h-full object-cover"/>
-            </div>
-            <h3 className="text-2xl font-bold mt-4 text-center" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>Project 2</h3>
-            <p className="text-center text-base sm:text-lg mt-2" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>An innovative software solution tailored to specific business needs.</p>
-          </div>
-          {/* Add more projects as needed */}
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="w-full flex flex-col items-center py-24 bg-gray-900 mt-24 pt-32"> {/* Added pt-32 for more padding */}
-        <div className="py-5"></div> {/* Add padding div for spacing */}
+      <section id="contact" className="w-full flex flex-col items-center py-24 bg-gray-900 mt-24 pt-32">
+        <div className="py-5"></div>
         <h2 className="text-4xl font-bold mb-8 text-center" style={{ color: '#00A89D', fontFamily: 'Poppins, sans-serif' }}>Contact Us</h2>
         <p className="max-w-2xl text-center mb-8" style={{ color: '#FFFFFF', fontFamily: 'Poppins, sans-serif' }}>
           Let&apos;s discuss your software goals. If you have any questions or would like to get in touch, please contact us at:
@@ -129,7 +121,7 @@ export default function Home() {
           transition={{ duration: 1.4 }}
           className="text-xl font-bold px-6 py-3 mt-4 text-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105"
           style={{
-            backgroundColor: '#00A89D', // Changed to match the logo color
+            backgroundColor: '#00A89D',
             backdropFilter: 'blur(10px)',
             border: '1px solid rgba(255, 255, 255, 0.5)'
           }}
@@ -154,8 +146,8 @@ export default function Home() {
           transition: transform 0.3s, box-shadow 0.3s;
           border-radius: 16px;
           padding: 1.5rem;
-          width: calc(100% - 2rem); /* Ensure there's padding from the edges */
-          max-width: 500px; /* Maximum width for the boxes */
+          width: calc(100% - 2rem);
+          max-width: 500px;
         }
 
         .box:hover {
@@ -164,29 +156,21 @@ export default function Home() {
         }
 
         .hero-logo {
-          width: 100%; /* Ensure it scales with screen size */
-          max-width: 800px; /* Maximum width */
-          height: auto; /* Maintain aspect ratio */
+          width: 100%;
+          max-width: 800px;
+          height: auto;
         }
 
         @media (min-width: 640px) {
           .hero-logo {
-            max-width: 400px; /* Adjust for larger screens */
+            max-width: 400px;
           }
         }
 
         @media (min-width: 1024px) {
           .hero-logo {
-            max-width: 800px; /* Original width for larger screens */
+            max-width: 800px;
           }
-        }
-
-        SVG{
-          display:inline-block;
-          height:1em;
-          line-height:1em;
-          /* just for vertical alignment as svg don't have descenders like fonts */
-          vertical-align:-0.2em;
         }
 
         .box img {
@@ -208,7 +192,7 @@ export default function Home() {
         }
 
         .bg-hero-pattern {
-          background: linear-gradient(135deg, #000000, #000000); /* Changed to black */
+          background: linear-gradient(135deg, #000000, #000000);
           color: #FFFFFF;
           width: 100%;
           display: flex;
@@ -225,7 +209,7 @@ export default function Home() {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Changed to black */
+          background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
           z-index: -1;
         }
       `}</style>

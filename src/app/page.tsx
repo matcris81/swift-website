@@ -42,7 +42,7 @@ export default function Home() {
       {/* Nav */}
       <nav className="fixed top-0 z-50 w-full backdrop-blur-md bg-gray-950/70 border-b border-white/5">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
-          <Image src="/Swift3.svg" alt="Swift Solutions" width={80} height={26} className="w-16 sm:w-24" />
+          <div />
           <ul className="flex gap-5 text-sm text-gray-400 sm:gap-8">
             {navLinks.map((l) => (
               <li key={l.href}>

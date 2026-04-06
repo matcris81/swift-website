@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
-  title: "Swift",
-  description: "Swift software solutions",
+  title: "Swift Solutions - Cloud Solutions, Built for You",
+  description: "We design, build, and manage cloud infrastructure so you can focus on growing your business.",
 };
 
 export default function RootLayout({
@@ -15,8 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${poppins.className} bg-gray-950 text-white antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

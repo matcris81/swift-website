@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: #00A89D;
+    --color-primary-dark: #008F86;
+    --color-accent: #0054A6;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  /* padding: 1rem; */
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  ::selection {
+    background-color: rgba(0, 168, 157, 0.3);
   }
 }
-

@@ -19,20 +19,20 @@ const navLinks = [
 
 const services = [
   {
-    title: "Cloud Architecture",
-    desc: "Scalable, secure cloud infrastructure designed around your workloads and budget.",
+    title: "Intelligent Automation",
+    desc: "AI agents and workflow automation that take on repetitive work — data entry, document processing, routine support — so your team gets their time back.",
   },
   {
-    title: "Cloud Migration",
-    desc: "Seamless migration of your existing systems to the cloud with minimal downtime.",
+    title: "Cloud Architecture & Migration",
+    desc: "Scalable, secure cloud infrastructure designed around your workloads — and seamless migration of existing systems with minimal downtime.",
   },
   {
-    title: "DevOps & Automation",
-    desc: "CI/CD pipelines, infrastructure as code, and monitoring to keep your deployments fast and reliable.",
+    title: "AI-Powered Insights",
+    desc: "Turn scattered data into decisions. AI analytics that give leaders the visibility they've been missing.",
   },
   {
-    title: "Managed Services",
-    desc: "Ongoing cloud management, optimization, and support so your team can focus on what matters.",
+    title: "DevOps & Managed Services",
+    desc: "CI/CD, infrastructure as code, monitoring, and ongoing cloud management — so your deployments stay fast, reliable, and out of your way.",
   },
 ];
 
@@ -63,13 +63,13 @@ export default function Home() {
 
           <motion.div initial="hidden" animate="visible" className="relative z-10 flex flex-col items-center gap-4 sm:gap-6">
             <motion.div custom={0} variants={fadeUp}>
-              <Image src="/Swift3.svg" alt="Swift Solutions logo" width={280} height={280} className="w-40 sm:w-56 md:w-72" priority />
+              <Image src="/Swift3.svg" alt="Swift Solutions logo" width={400} height={400} className="w-56 sm:w-72 md:w-96" priority />
             </motion.div>
             <motion.h1 custom={1} variants={fadeUp} className="text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Cloud Solutions, Built for You
+              AI Cloud Solutions, Built for You
             </motion.h1>
             <motion.p custom={2} variants={fadeUp} className="max-w-md text-base text-gray-400 sm:max-w-lg sm:text-lg">
-              We design, build, and manage cloud infrastructure so you can focus on growing your business.
+              We help businesses unlock real results with AI and cloud — starting with the bottlenecks slowing your team down today.
             </motion.p>
             <motion.a
               custom={3}
@@ -83,18 +83,28 @@ export default function Home() {
         </section>
 
         {/* Services */}
-        <section id="services" className="py-16 px-5 sm:py-28 sm:px-6">
-          <div className="mx-auto max-w-5xl">
-            <motion.h2
+        <section id="services" className="relative py-16 px-5 sm:py-28 sm:px-6">
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/10 blur-[120px] sm:h-[500px] sm:w-[500px]" />
+          <div className="relative mx-auto max-w-5xl">
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               custom={0}
               variants={fadeUp}
-              className="mb-8 text-center text-2xl font-bold text-primary sm:mb-14 sm:text-4xl"
+              className="mx-auto mb-10 max-w-2xl text-center sm:mb-16"
             >
-              Our Services
-            </motion.h2>
+              <h2 className="text-2xl font-bold sm:text-4xl">
+                Start with the problem, not the technology
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-gray-400 sm:text-lg">
+                Every business we talk to has the same story — staff buried in repetitive tasks, data trapped in silos, support queues nobody can keep up with, and decisions held back by reports that take weeks to put together.
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-gray-400 sm:text-lg">
+                We work alongside you to find the bottlenecks that hurt most, then apply AI and cloud where it actually moves the needle — not where it sounds impressive.
+              </p>
+            </motion.div>
+
             <div className="grid gap-4 sm:grid-cols-2 sm:gap-8">
               {services.map((s, i) => (
                 <motion.div
@@ -107,7 +117,7 @@ export default function Home() {
                   className="group rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur transition-all hover:border-primary/30 hover:bg-white/[0.06] sm:p-8"
                 >
                   <h3 className="mb-3 text-xl font-semibold">{s.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{s.desc}</p>
+                  <p className="leading-relaxed text-gray-400">{s.desc}</p>
                 </motion.div>
               ))}
             </div>
